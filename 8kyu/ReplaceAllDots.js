@@ -11,3 +11,13 @@
 // String str will never be null.
 //
 //     DebuggingRegular Expressions
+
+// var replaceDots = function(str) {
+//     return str.replace(/./, '-');
+// }
+
+//  Solution
+
+var replaceDots = function(str) {
+    return str.replace(/\./g, '-');
+}
