@@ -10,3 +10,19 @@
 //     with size 12 should return : '101010101010'.
 //
 //     The size will always be positive and will only use whole numbers.
+
+//  Solution
+
+function stringy(size) {
+    let result = "";
+
+    while (size > 0) {
+        result = result + "1"
+        size--
+        if (size > 0) {
+            result = result + "0"
+            size--
+        }
+    }
+    return(result)
+}
